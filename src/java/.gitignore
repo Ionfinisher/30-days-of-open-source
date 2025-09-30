@@ -88,3 +88,16 @@ nb-configuration.xml
 ## Miscellaneous
 ##############################
 *.log
+
+# User-generated files
+scores/*.json
+scores/*.csv
+!scores/.gitkeep
+
+# Personal/modified question files
+data/questions_modified.json
+data/user_*.json
+
+# Keep template files
+!data/questions_template.json
+!data/sample_questions.json
