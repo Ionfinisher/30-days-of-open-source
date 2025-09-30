@@ -29,7 +29,7 @@ body:
   - type: textarea
     id: links
     attributes:
-      label: Lien public vers votre les fichiers de design
+      label: Lien public vers les fichiers de design
       description: Ajoutez un lien public vers vos fichiers de design (Figma, Adobe XD, etc.).
     validations:
       required: false
