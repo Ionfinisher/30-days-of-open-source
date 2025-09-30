@@ -4,12 +4,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        Merci de remplir ce formulaire pour ouvrir une issue relative au 30doos.
+        Merci de remplir ce formulaire pour ouvrir une issue relative au defi 30doos.
   - type: input
     id: defi
     attributes:
       label: Quel défi êtes-vous en train de relever ?
-      description: Décrivez le défi ou le problème que vous souhaitez résoudre.
+      description: Décrivez le défi que vous relevez.
     validations:
       required: true
   - type: input
@@ -23,7 +23,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Décrivez la fonctionnalité ou l'amélioration proposée.
+      description: Décrivez votre brievement votre contribution.
     validations:
       required: true
   - type: textarea

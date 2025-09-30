@@ -1,0 +1,35 @@
+name: 30doos issue
+description: Issue template for 30doos design contribution
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir ce formulaire pour ouvrir une issue relative à une contribution design 30doos.
+  - type: input
+    id: design
+    attributes:
+      label: Quel contribution design faites-vous ?
+      description: Décrivez la contribution que vous faites.
+    validations:
+      required: true
+  - type: input
+    id: points
+    attributes:
+      label: Points
+      description: Indiquez les points associés à cette contribution.
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Décrivez votre brievement votre contribution.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Lien public vers votre les fichiers de design
+      description: Ajoutez un lien public vers vos fichiers de design (Figma, Adobe XD, etc.).
+    validations:
+      required: false

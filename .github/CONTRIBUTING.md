@@ -54,11 +54,11 @@ La traduction peux porter par exemple sur la traduction de divers fichiers du re
 
 ### Design
 
-Le design peux consister à concevoir des design d'interfaces utilisateurs, des logos ou des images (assets) pour les projets.
+Le design peux consister à concevoir des design d'interfaces utilisateurs, des logos ou des images. Check le fichier [README](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/designs/README.md) pour voir toutes les contributions design possible.
 
 ### Defi
 
-Les défis peuvent consister à agir sur les reseaux sociaux en faisant des posts, écrire des des posts de blog techniques ou faire un certains nombre de tâches. Check le fichier [README](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/defis/README.md) pour voir tous les défis
+Les défis peuvent consister à agir sur les reseaux sociaux en faisant des posts, écrire des des posts de blog techniques ou faire un certains nombre de tâches. Check le fichier [README](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/defis/README.md) pour voir tous les défis.
 
 ---
 
