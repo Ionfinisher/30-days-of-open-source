@@ -1,0 +1,88 @@
+name: Auto-label selon case à cocher
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  label-by-checkbox:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Parse PR body and add labels
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            // Get PR body
+            const prBody = context.payload.pull_request.body || '';
+            console.log("Processing PR body for checkboxes");
+
+            // Define checkbox patterns to look for and corresponding labels
+            const checkboxPatterns = {
+              'code': /- \[x\] [`]?code[`]?/i,
+              'documentation': /- \[x\] [`]?documentation[`]?/i,
+              'traduction': /- \[x\] [`]?traduction[`]?/i,
+              'design': /- \[x\] [`]?design[`]?/i,
+              'defi': /- \[x\] [`]?defi[`]?/i
+            };
+
+            // Get all possible labels for this category
+            const allContribTypeLabels = Object.keys(checkboxPatterns);
+
+            // Find which boxes are checked
+            const labelsToAdd = [];
+            for (const [label, pattern] of Object.entries(checkboxPatterns)) {
+              if (pattern.test(prBody)) {
+                console.log(`Found checked box for '${label}'`);
+                labelsToAdd.push(label);
+              }
+            }
+
+            // Get current labels on the PR
+            const { data: currentLabels } = await github.rest.issues.listLabelsOnIssue({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            });
+
+            // Find contribution type labels to remove
+            const currentContribLabels = currentLabels
+              .map(label => label.name)
+              .filter(name => allContribTypeLabels.includes(name));
+
+            // Remove old contribution type labels
+            for (const labelToRemove of currentContribLabels) {
+              if (!labelsToAdd.includes(labelToRemove)) {
+                console.log(`Removing old label: ${labelToRemove}`);
+                try {
+                  await github.rest.issues.removeLabel({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: context.issue.number,
+                    name: labelToRemove
+                  });
+                } catch (error) {
+                  console.log(`Error removing label ${labelToRemove}: ${error.message}`);
+                }
+              }
+            }
+
+            // Add new labels if any found
+            if (labelsToAdd.length > 0) {
+              console.log(`Adding labels: ${labelsToAdd.join(', ')}`);
+              try {
+                await github.rest.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  labels: labelsToAdd
+                });
+                console.log('Labels added successfully');
+              } catch (error) {
+                console.error(`Error adding labels: ${error.message}`);
+              }
+            } else {
+              console.log('No checked boxes found that match our patterns');
+            }

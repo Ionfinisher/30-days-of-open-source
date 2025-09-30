@@ -1,0 +1,35 @@
+name: 30doos issue
+description: Issue template for 30doos challenge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir ce formulaire pour ouvrir une issue relative au 30doos.
+  - type: input
+    id: defi
+    attributes:
+      label: Quel défi êtes-vous en train de relever ?
+      description: Décrivez le défi ou le problème que vous souhaitez résoudre.
+    validations:
+      required: true
+  - type: input
+    id: points
+    attributes:
+      label: Points
+      description: Indiquez les points associés à ce défi.
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Décrivez la fonctionnalité ou l'amélioration proposée.
+    validations:
+      required: true
+  - type: textarea
+    id: preuves
+    attributes:
+      label: Preuves que vous avez relevé le défi
+      description: Ajoutez des captures d'écran ou d'autres preuves.
+    validations:
+      required: false

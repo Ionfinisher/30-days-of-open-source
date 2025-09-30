@@ -1,0 +1,17 @@
+name: Ajouter label 30doos
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  label-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add label to new issue
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels: "30doos"
