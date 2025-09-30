@@ -33,4 +33,4 @@ Donne un étoile au repo et ajoute les preuves à ton PR.
 
 1. **Suivez ce tutoriel** [ici](https://30doos.oozons.com/tutorial)
 
-**🎨 Prêt à designer ? Choisissez une tâche et créez quelque chose d'extraordinaire !**
+**Prêt à relever le défi ? Choisissez une tâche et créez quelque chose et créez votre PR !**
