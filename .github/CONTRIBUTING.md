@@ -39,10 +39,10 @@ Le PR doit inclure :
 
 Tu peux retrouver les issues liées aux fonctionnalités pour chaque language de programmation dans le dossier `src`
 
-- PHP 👉 [FEATURES](https://30doos.oozons.com)
-- Java 👉 [FEATURES](https://30doos.oozons.com)
-- JavaScript 👉 [FEATURES](https://30doos.oozons.com)
-- Python 👉 [FEATURES](https://30doos.oozons.com).
+- PHP 👉 [FEATURES](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/php/README.md)
+- Java 👉 [FEATURES](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/java/README.md)
+- JavaScript 👉 [FEATURES](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/javascript/README.md)
+- Python 👉 [FEATURES](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/python/README.md).
 
 ### Documentation
 
@@ -54,11 +54,11 @@ La traduction peux porter par exemple sur la traduction de divers fichiers du re
 
 ### Design
 
-La design peux consister à concevoir des design d'interfaces utilisateurs, des logos ou des images (assets) pour les projets.
+Le design peux consister à concevoir des design d'interfaces utilisateurs, des logos ou des images (assets) pour les projets.
 
 ### Defi
 
-La defi peuvent consister à agir sur les reseaux sociaux en faisant des posts, écrire des des posts de blog techniques ou faire un certains nombre de tâches.
+Les défis peuvent consister à agir sur les reseaux sociaux en faisant des posts, écrire des des posts de blog techniques ou faire un certains nombre de tâches. Check le fichier [README](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/defis/README.md) pour voir tous les défis
 
 ---
 
