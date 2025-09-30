@@ -95,7 +95,7 @@ Les contributions sont les bienvenues ! N'hésitez pas à participer
 
 ## 📄 Licence
 
-Ce projet est sous licence [Apache 2.0 license](https://github.com/Ionfinisher/30OSS-test/blob/1f873a4f25bcf7be39eab57c8317ade672865cac/LICENSE). Voir le fichier `LICENSE` pour plus de détails.
+Ce projet est sous licence [Apache 2.0 license](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/LICENSE). Voir le fichier `LICENSE` pour plus de détails.
 
 ## 🎓 À Propos
 
