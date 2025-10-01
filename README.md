@@ -71,7 +71,7 @@ Pour chaque projet :
 
 ## 📅 Dates importantes
 
-- Période de contributions acceptées : du **1er au 30** du mois (à adapter selon les dates de ton challenge).
+- Période de contributions acceptées : du **1er au 30** Octobre.
 
 ---
 
