@@ -39,7 +39,6 @@ Le PR doit inclure :
 
 Tu peux retrouver les issues liées aux fonctionnalités pour chaque language de programmation dans le dossier `src`
 
-- PHP 👉 [FEATURES](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/php/README.md)
 - Java 👉 [FEATURES](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/java/README.md)
 - JavaScript 👉 [FEATURES](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/javascript/README.md)
 - Python 👉 [FEATURES](https://github.com/Ionfinisher/30-days-of-open-source/blob/main/src/python/README.md).
