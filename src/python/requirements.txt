@@ -1,2 +1,2 @@
-# for Windows synstems
+# for Windows systems
 windows-curses==2.4.1
