@@ -40,7 +40,7 @@ Voici les 4 projets dans lesquels tu peux contribuer :
 | ---------- | ----------------- | ----------------------------------------------------------------------------------------- |
 | Java       | Quiz App console  | Générer un quiz, chargement via fichier, ajout de mode admin, timer + stockage des scores |
 | JavaScript | Weather Dashboard | Recherche météo, icônes, historique, thème sombre, graphiques                             |
-| Python     | Expense Tracker   | Ajouter / lister / filtrer des dépenses, persistance                                      |
+| Python     | Terminal Snake    | Jeu du serpent dans le terminal                                                           |
 
 Chaque projet est développé pour permettre des contributions de très bon « first issues » à des fonctionnalités plus avancées.
 
