@@ -34,7 +34,7 @@ Ce dépôt central contient les définitions des projets de base, les templates,
 
 ## 📚 Les projets
 
-Voici les 4 projets dans lesquels tu peux contribuer :
+Voici les 3 projets dans lesquels tu peux contribuer :
 
 | Langage    | Projet            | Exemples de contributions                                                                 |
 | ---------- | ----------------- | ----------------------------------------------------------------------------------------- |
