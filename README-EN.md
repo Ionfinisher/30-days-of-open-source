@@ -20,7 +20,7 @@ This central repository contains the definitions of the base projects, templates
 
 🗂 
 ## 🗂 Repository Structure
-
+```
 /
 ├── src/              # Contains folders for each project (java, js, python)
 │   ├── java/
@@ -30,9 +30,9 @@ This central repository contains the definitions of the base projects, templates
 ├── design/           # Folder for design contributions
 ├── .github/          # GitHub configuration (workflows, labels, etc.)
 ├── README.md          # This file
-├── CONTRIBUTING.md    # Contribution rules for the challenge
-└── LICENSE            # Project license (Apache 2.0)
-/
+├── CONTRIBUTING.md    # Contribution rules for the challenge└── LICENSE            # Project license (Apache 2.0)
+
+```
 
 ---
 
