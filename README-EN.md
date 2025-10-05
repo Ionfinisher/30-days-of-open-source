@@ -20,6 +20,7 @@ This central repository contains the definitions of the base projects, templates
 
 🗂 
 ## 🗂 Repository Structure
+
 /
 ├── src/              # Contains folders for each project (java, js, python)
 │   ├── java/
@@ -32,6 +33,7 @@ This central repository contains the definitions of the base projects, templates
 ├── CONTRIBUTING.md    # Contribution rules for the challenge
 └── LICENSE            # Project license (Apache 2.0)
 
+
 ---
 
 
@@ -39,11 +41,12 @@ This central repository contains the definitions of the base projects, templates
 
 Here are the three projects you can contribute to:
 
-| Language    | Projet            | Example Contributions |
------------------------------------------------------------------------------------------ |
-| Java       | Console Quiz App  | Generate quizzes, load from files, add admin mode, timer + score storage|
-| JavaScript | Weather Dashboard | Weather search, icons, history, dark theme, charts |
-| Python     | Terminal Snake    | Snake Game	Snake game in the terminal    
+| Language       | Project             | Example Contributions                                                    |
+| -------------- | ------------------- | ------------------------------------------------------------------------ |
+| **Java**       | Console Quiz App    | Generate quizzes, load from files, add admin mode, timer + score storage |
+| **JavaScript** | Weather Dashboard   | Weather search, icons, history, dark theme, charts                       |
+| **Python**     | Terminal Snake Game | Snake game in the terminal                                               |
+
 
 Each project is designed to offer great “first issues” for beginners as well as more advanced feature contributions.
 
@@ -82,7 +85,7 @@ For each project:
 
 ## 📅 Important Dates 
 
-Contribution period: **1st to October 30th**
+Contribution period: **October 1st to October 30th**
 
 ---
 
