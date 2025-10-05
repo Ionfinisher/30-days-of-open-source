@@ -32,7 +32,7 @@ This central repository contains the definitions of the base projects, templates
 ├── README.md          # This file
 ├── CONTRIBUTING.md    # Contribution rules for the challenge
 └── LICENSE            # Project license (Apache 2.0)
-
+/
 
 ---
 
