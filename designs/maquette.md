@@ -9,3 +9,7 @@ Exemple:
 Commencez après la ligne ci-dessous 👇
 
 ---
+
+06-Octobre-2025 par [@King-Ephraim](https://drive.google.com/file/d/14IrGDtP6kIZpMyLwB-Zkhv1PP9KFOA07/view?usp=drive_link)
+
+
