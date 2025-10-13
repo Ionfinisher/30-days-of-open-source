@@ -8,4 +8,6 @@ Exemple:
 
 Commencez après la ligne ci-dessous 👇
 
+13-Octobre-2025 par [@Koj-Kyo](http://localhost:5200/)
+
 ---
