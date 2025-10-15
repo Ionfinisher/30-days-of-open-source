@@ -8,6 +8,8 @@ Exemple:
 
 Commencez après la ligne ci-dessous 👇
 
+15-Octobre-2025 par [@Koj-Kyo](https://github.com/Koj-Kyo/plp-bootcamp-codeproject.git)
+
 13-Octobre-2025 par [@Koj-Kyo](http://localhost:5200/)
 
 ---
