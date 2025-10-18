@@ -1,0 +1,16 @@
+{
+  "questions": [
+    {
+      "text": "What is the capital of France?",
+      "Qtype": "MULTIPLE_CHOICE",
+      "options": ["A. London", "B. Paris", "C. Berlin", "D. Madrid"],
+      "correctAnswer": "B"
+    },
+    {
+      "text": "What is 2 + 2?",
+      "Qtype": "MULTIPLE_CHOICE",
+      "options": ["A. 3", "B. 4", "C. 5", "D. 6"],
+      "correctAnswer": "B"
+    }
+  ]
+}
