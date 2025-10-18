@@ -10,6 +10,10 @@ public class Question {
     private QuestionType Qtype;
     private List<String> options;
 
+    //A no-argument constructor for Gson to instantiate the object.
+    public Question(){
+    }
+
     /**
      * Constructor for FREE_TEXT question (open-ended answer).
      */
