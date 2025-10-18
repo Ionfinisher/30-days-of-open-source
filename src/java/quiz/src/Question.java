@@ -10,8 +10,8 @@ public class Question {
     private QuestionType Qtype;
     private List<String> options;
 
-    //A no-argument constructor for Gson to instantiate the object.
-    public Question(){
+    // A no-argument constructor for Gson to instantiate the object.
+    public Question() {
     }
 
     /**
@@ -72,6 +72,22 @@ public class Question {
 
     public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
+    }
+
+    public QuestionType getType() {
+        return Qtype;
+    }
+
+    public void setType(QuestionType Qtype) {
+        this.Qtype = Qtype;
+    }
+
+    public List<String> getOptions() {
+        return options;
+    }
+
+    public void setOptions(List<String> options) {
+        this.options = options;
     }
 
     /**
