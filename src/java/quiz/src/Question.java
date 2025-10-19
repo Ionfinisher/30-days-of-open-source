@@ -9,6 +9,7 @@ public class Question {
     private String correctAnswer;
     private QuestionType Qtype;
     private List<String> options;
+    private int timeLimitInSeconds;
 
     // A no-argument constructor for Gson to instantiate the object.
     public Question() {
@@ -90,6 +91,14 @@ public class Question {
         this.options = options;
     }
 
+    public int getTimeLimitInSeconds() {
+        return timeLimitInSeconds;
+    }
+
+    public void setTimeLimitInSeconds(int timeLimitInSeconds) {
+        this.timeLimitInSeconds = timeLimitInSeconds;
+    }
+
     /**
      * Verifies if the user's response is correct based on the question type.
      * Handles case-insensitive comparison for FREE_TEXT and letter validation
@@ -99,24 +108,21 @@ public class Question {
      * @param userResponse The user's submitted answer string.
      * @return true if the answer is correct, false otherwise.
      */
-    public boolean verifierResponse(String userResponse) {
-        if (this.Qtype == QuestionType.FREE_TEXT) {
-            return correctAnswer.equalsIgnoreCase(userResponse);
-        }
-
-        if (this.Qtype == QuestionType.MULTIPLE_CHOICE) {
-            String userChoice = userResponse.trim().toUpperCase();
-
-            if (userChoice.length() != 1) {
-                return false;
-            }
-
-            int index = userChoice.charAt(0) - 'A';
-
-            if (index >= 0 && index < options.size()) {
-                return options.get(index).equalsIgnoreCase(this.correctAnswer);
-            }
-        }
+  public boolean verifierResponse(String userResponse) {
+    if (userResponse == null || userResponse.trim().isEmpty()) {
         return false;
     }
+
+    String trimmedResponse = userResponse.trim();
+
+    if (this.Qtype == QuestionType.FREE_TEXT) {
+        return correctAnswer.equalsIgnoreCase(trimmedResponse);
+    }
+
+    if (this.Qtype == QuestionType.MULTIPLE_CHOICE) {
+        return correctAnswer.equalsIgnoreCase(trimmedResponse);
+    }
+
+    return false;
+}
 }
