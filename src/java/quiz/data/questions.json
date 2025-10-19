@@ -10,7 +10,7 @@
         "C. Berlin",
         "D. Madrid"
       ],
-      "timeLimitInSeconds": 15
+      "timeLimitInSeconds": 25
     },
     {
       "text": "What is 2 + 2?",
@@ -25,21 +25,20 @@
       "timeLimitInSeconds": 10
     },
     {
-      "text": "What is the largest planet in our solar system?",
-      "correctAnswer": "C",
-      "Qtype": "MULTIPLE_CHOICE",
-      "options": [
-        "A. Earth",
-        "B. Mars",
-        "C. Jupiter",
-        "D. Saturn"
-      ],
-      "timeLimitInSeconds": 15
+      "text": "What is the capital of Japan?",
+      "correctAnswer": "Tokyo",
+      "Qtype": "FREE_TEXT",
+      "timeLimitInSeconds": 10
     },
     {
-      "text": "What is the main programming language for Android development?",
-      "correctAnswer": "Java",
-      "Qtype": "FREE_TEXT",
+      "text": "Who created the Python programming language?",
+      "correctAnswer": "A",
+      "Qtype": "MULTIPLE_CHOICE",
+      "options": [
+        "A. Guido van Rossum",
+        "B. James Gosling",
+        "C. Bjarne Stroustrup"
+      ],
       "timeLimitInSeconds": 20
     }
   ]

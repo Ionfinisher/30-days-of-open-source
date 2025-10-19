@@ -15,9 +15,9 @@ public class Quiz {
     private final Scanner scanner;
     private int score;
 
-    public Quiz(List<Question> questions) {
+    public Quiz(List<Question> questions, Scanner scanner) {
         this.questions = questions;
-        this.scanner = new Scanner(System.in);
+        this.scanner = scanner;
         this.score = 0;
     }
 
@@ -37,7 +37,7 @@ public class Quiz {
         }
 
         displayFinalScore();
-        scanner.close();
+
     }
 
     /**
