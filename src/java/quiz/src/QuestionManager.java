@@ -16,11 +16,11 @@ public class QuestionManager {
     // file.
     public QuestionManager(String filePath) {
         this.filePath = filePath;
-        this.questions = loadQuestionsFromFile();
     }
 
     // Adds a new question after validating it and saves the updated list.
     public boolean addQuestion(Question newQuestion) {
+        this.questions = loadQuestionsFromFile();
         // Validate question text is not empty
         if (newQuestion == null || newQuestion.getText() == null || newQuestion.getText().trim().isEmpty()) {
             System.err.println("Validation failed: Question text cannot be empty.");
@@ -62,7 +62,7 @@ public class QuestionManager {
     }
 
     // Loads all questions from the specified JSON file.
-    public List<Question> loadQuestionsFromFile() {
+    private List<Question> loadQuestionsFromFile() {
         Gson gson = new Gson();
         try (Reader reader = new FileReader(this.filePath)) {
             QuestionList questionList = gson.fromJson(reader, QuestionList.class);
@@ -75,5 +75,51 @@ public class QuestionManager {
             System.err.println("Error reading questions file: " + e.getMessage());
             return Collections.emptyList();
         }
+    }
+
+    // Deletes a question from the list by its index.
+    public boolean deleteQuestion(int index) {
+        this.questions = loadQuestionsFromFile();
+        if (index >= 0 && index < this.questions.size()) {
+            this.questions.remove(index);
+            return saveQuestionsToFile();
+        } else {
+            System.err.println("Error: Invalid question number.");
+            return false;
+        }
+    }
+
+    // Updates an existing question at a specific index.
+    public boolean updateQuestion(int index, Question updatedQuestion) {
+        this.questions = loadQuestionsFromFile();
+        if (index < 0 || index >= this.questions.size()) {
+            System.err.println("Error: Invalid question number.");
+            return false;
+        }
+
+        // Check if the updated text conflicts with any OTHER question
+        for (int i = 0; i < this.questions.size(); i++) {
+            if (i == index)
+                continue;
+            if (this.questions.get(i).getText().equalsIgnoreCase(updatedQuestion.getText())) {
+                System.err.println("Error: Another question with this text already exists.");
+                return false;
+            }
+        }
+
+        // Automatically set question type before saving
+        if (updatedQuestion.getOptions() != null && !updatedQuestion.getOptions().isEmpty()) {
+            updatedQuestion.setType(QuestionType.MULTIPLE_CHOICE);
+        } else {
+            updatedQuestion.setType(QuestionType.FREE_TEXT);
+        }
+
+        this.questions.set(index, updatedQuestion);
+        return saveQuestionsToFile();
+    }
+
+    // Returns the current list of all questions.
+    public List<Question> getAllQuestions() {
+        return loadQuestionsFromFile();
     }
 }
