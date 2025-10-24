@@ -9,7 +9,8 @@
         "B. Paris",
         "C. Berlin",
         "D. Madrid"
-      ]
+      ],
+      "timeLimitInSeconds": 15
     },
     {
       "text": "What is 2 + 2?",
@@ -20,7 +21,8 @@
         "B. 4",
         "C. 5",
         "D. 6"
-      ]
+      ],
+      "timeLimitInSeconds": 10
     },
     {
       "text": "What is the largest planet in our solar system?",
@@ -31,12 +33,14 @@
         "B. Mars",
         "C. Jupiter",
         "D. Saturn"
-      ]
+      ],
+      "timeLimitInSeconds": 15
     },
     {
       "text": "What is the main programming language for Android development?",
       "correctAnswer": "Java",
-      "Qtype": "FREE_TEXT"
+      "Qtype": "FREE_TEXT",
+      "timeLimitInSeconds": 20
     }
   ]
 }

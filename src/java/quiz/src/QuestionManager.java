@@ -62,7 +62,7 @@ public class QuestionManager {
     }
 
     // Loads all questions from the specified JSON file.
-    private List<Question> loadQuestionsFromFile() {
+    public List<Question> loadQuestionsFromFile() {
         Gson gson = new Gson();
         try (Reader reader = new FileReader(this.filePath)) {
             QuestionList questionList = gson.fromJson(reader, QuestionList.class);
