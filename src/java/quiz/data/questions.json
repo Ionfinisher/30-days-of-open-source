@@ -2,15 +2,41 @@
   "questions": [
     {
       "text": "What is the capital of France?",
+      "correctAnswer": "B",
       "Qtype": "MULTIPLE_CHOICE",
-      "options": ["A. London", "B. Paris", "C. Berlin", "D. Madrid"],
-      "correctAnswer": "B"
+      "options": [
+        "A. London",
+        "B. Paris",
+        "C. Berlin",
+        "D. Madrid"
+      ]
     },
     {
       "text": "What is 2 + 2?",
+      "correctAnswer": "B",
       "Qtype": "MULTIPLE_CHOICE",
-      "options": ["A. 3", "B. 4", "C. 5", "D. 6"],
-      "correctAnswer": "B"
+      "options": [
+        "A. 3",
+        "B. 4",
+        "C. 5",
+        "D. 6"
+      ]
+    },
+    {
+      "text": "What is the largest planet in our solar system?",
+      "correctAnswer": "C",
+      "Qtype": "MULTIPLE_CHOICE",
+      "options": [
+        "A. Earth",
+        "B. Mars",
+        "C. Jupiter",
+        "D. Saturn"
+      ]
+    },
+    {
+      "text": "What is the main programming language for Android development?",
+      "correctAnswer": "Java",
+      "Qtype": "FREE_TEXT"
     }
   ]
 }
